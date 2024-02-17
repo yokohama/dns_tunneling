@@ -3,3 +3,6 @@
 
 /outfile/*
 !/outfile/.keep
+
+/bin/build/*
+!/bin/build/.keep
