@@ -8,7 +8,6 @@ length=${#array[@]}
 base64_full_filename=${array[length-1]}
 
 prefix=`echo $base64_full_filename | awk -F'_' '{print $1}'`
-echo $prefix
 base64_filename=`echo $base64_full_filename | awk -F'_' '{print $2}'`
 filename=`echo $base64_filename | base64 -d`
 
